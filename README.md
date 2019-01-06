@@ -85,8 +85,7 @@ cd native-ubuntu-mate-pplus/boot-src
 ./mkbootimg-pplus.sh PARTITION
 ```
 - Change `PARTITION` to one of the following:
-  - `mmcblk1p1` for booting from primary partition of SD card.
-  - `mmcblk1p2` for booting from secondary partition of SD card.
+  - `mmcblk1p1` for booting from the SD card.
   - `mmcblk0p53` for booting from data partition of internal storage.
 ### NOTE: Partitions MUST be formatted as ext4 for Ubuntu to be installed!
    - After running the script, a file called `ubuntu-boot.img` will be created in the `boot-src` directory.
