@@ -46,7 +46,7 @@
 ## Requirements:
 - TWRP >= 3.0.0
 - Unlocked bootloader
-- 8GB or larger SD card or the desire to flash directly to data partition.
+- 8GB or larger SD card
 - 64-bit Linux computer or VM
 
 ## Prepare:
