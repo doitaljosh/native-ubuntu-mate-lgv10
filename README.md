@@ -112,20 +112,13 @@ cd native-ubuntu-mate-pplus/boot-src
 
 ## Install the boot image
 1. In TWRP, navigate to Advanced->Terminal from the main menu.
-2. Back up your `laf` and `boot` partitions, you'll be flashing the boot image to one of these depending on where you are installing Ubuntu.
-### NOTE: They will be stored as `/cache/bootbak.img /cache/lafbak.img`
-### Run these commands:
-```
-dd if=/dev/block/bootdevice/by-name/laf of=/cache/lafbak.img
-dd if=/dev/block/bootdevice/by-name/boot of=/cache/bootbak.img
-```
-3. Carefully follow these instructions to wipe the partitions and install the boot image:
+2. Carefully follow these instructions to wipe the partitions and install the boot image:
    - If you are booting Ubuntu from the SD card, run:
 `/sdcard/scripts/flashboot-sdcard.sh`
    - If you are booting Ubuntu from the internal storage, run: 
 `/external_sd/scripts/flashboot-internal.sh`
 
-4. Now that the boot image is installed, it's time to extract the rootfs.
+3. Now that the boot image is installed, it's time to extract the rootfs.
    - If you are booting Ubuntu from the SD card, run:
 `/sdcard/scripts/install-rootfs-sdcard.sh`
    - If you are booting Ubuntu from the internal storage, run:
