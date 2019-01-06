@@ -100,15 +100,15 @@ cd native-ubuntu-mate-pplus/boot-src
 6. Navigate to the root of the repository:
    - `cd ~/native-ubuntu-mate-lgv10`
 7. Run the following script as instructed. 
-   - For booting Ubuntu from SD card, run:
+- For booting Ubuntu from SD card, run:
 ```
 ./copy_files.sh sdcard
 ```
-   - For booting Ubuntu from internal storage, run:
+- For booting Ubuntu from internal storage, run:
 ```
 ./copy_files.sh internal
 ```
-   - Copying will take a few minutes as the files are around 1.8GB in size.
+- Copying will take a few minutes as the files are around 1.8GB in size.
 
 ## Install the boot image
 1. In TWRP, navigate to Advanced->Terminal from the main menu.
@@ -122,7 +122,7 @@ dd if=/dev/block/bootdevice/by-name/boot of=/cache/bootbak.img
 3. Carefully follow these instructions to wipe the partitions and install the boot image:
    - If you are booting Ubuntu from the SD card, run:
 `/sdcard/scripts/flashboot-sdcard.sh`
-   - If you are bootimg Ubuntu from the internal storage, run: 
+   - If you are booting Ubuntu from the internal storage, run: 
 `/external_sd/scripts/flashboot-internal.sh`
 
 4. Now that the boot image is installed, it's time to extract the rootfs.
